@@ -1,6 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #60AB91;
+    background-color: #062F4F;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 a {
@@ -10,36 +14,61 @@ a {
 .container {
     max-width: 600px;
     margin: 45px auto;
-    text-align: center;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-    margin-top: 105px;
 }
 
 h1 {
     font-size: 24px;
+    margin-bottom: 15px;
 }
 
-input[type="text"] {
+input[type="text"], button {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button {
     background-color: tomato;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
 
 .weather-info {
     margin-top: 20px;
-    
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
 }
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+

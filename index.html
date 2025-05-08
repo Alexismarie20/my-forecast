@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forecast App</title>
-	<link rel="stylesheet" href="src/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</body>
+</html>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
 </head>
 <body>
+<h1 id="searchResult" class="fade-in"></h1>
 <div class = "container">
-	<h1>Sarasota</h1>
 	<input type ="text" id="locationInput" placeholder="Enter city name...">
 	<button id="searchButton">Search</button>
 	<div class ="weather-info">
@@ -18,8 +21,19 @@
     <p id="humidity"></p>
     <p id="windSpeed"></p>
     <p id="localTime"></p>
-
-	</div>
+<p3><strong>Hourly Forecast</strong></p3>
+	<div id="hourlyForecast"></div>
+	
+<!-- 🌦️ Weather Info -->
+<h2 id="location"></h2>
+<p id="temperature"></p>
+<p id="description"></p>
+<p id="weatherText"></p>
+<div id="weatherEmoji"></div>
+<p id="humidity"></p>
+<p id="windSpeed"></p>
+<p id="localTime"></p>
+        
 <footer>
 	 This project was coded by 
   <a href="https://github.com/Alexismarie20" target="blank"> Alexis Hepler </a>
@@ -27,10 +41,6 @@
    and <a href="" target="blank">hosted on Netlify</a>
   </footer>
 </div>
-	<script src="src/script.js" defer></script>
-
-	
-
-
+	<script src="src/script.js"></script> 
 </body>
 </html>
